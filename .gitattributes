@@ -1,0 +1,8 @@
+* text=auto
+
+# Preserve generated reports and images byte-for-byte.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

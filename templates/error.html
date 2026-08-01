@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="card">
+    <div class="card-title">{{ title }}</div>
+    <p class="muted">{{ message }}</p>
+    <div class="actions">
+      <a class="btn" href="{{ url_for('index') }}">Home</a>
+    </div>
+  </section>
+{% endblock %}

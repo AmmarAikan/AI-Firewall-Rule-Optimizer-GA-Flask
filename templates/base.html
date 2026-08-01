@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title if title else "Firewall Rule Optimizer (GA)" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div class="brand">
+          <div class="logo">🧬</div>
+          <div>
+            <div class="brand-title">Firewall Rule Optimizer</div>
+            <div class="brand-sub">Genetic Algorithm • Web Demo</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('index') }}#recent">Recent Runs</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>Built for demo: reorder firewall rules with GA to reduce inspection cost while keeping coverage.</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Optimize Firewall Rule Ordering with a Genetic Algorithm</h1>
+      <p class="muted">
+        This demo evolves a <b>permutation</b> of rule indices to reduce average packet inspection work
+        while preserving the original policy decisions (high coverage).
+      </p>
+      <div class="chips">
+        <span class="chip">Minimal conflicts (traffic shadowing)</span>
+        <span class="chip">Maximum coverage</span>
+        <span class="chip">Optimal ordering</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="card small">
+        <div class="card-title">How it works</div>
+        <ol class="steps">
+          <li>Load or generate a ruleset</li>
+          <li>Generate traffic samples</li>
+          <li>GA evolves better orderings</li>
+          <li>Show before/after metrics + plots</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-title">Start a new optimization run</div>
+    <form class="form" action="{{ url_for('start') }}" method="post" enctype="multipart/form-data">
+      <div class="grid">
+        <div>
+          <label>Student name</label>
+          <input name="student" value="{{ defaults.student }}" />
+        </div>
+
+        <div>
+          <label>Mode (preset)</label>
+          <select name="mode">
+            <option value="demo" {% if defaults.mode=='demo' %}selected{% endif %}>Demo (fast)</option>
+            <option value="balanced" {% if defaults.mode=='balanced' %}selected{% endif %}>Balanced</option>
+            <option value="quality" {% if defaults.mode=='quality' %}selected{% endif %}>Quality (slower)</option>
+          </select>
+          <div class="hint">You can still override numbers below.</div>
+        </div>
+
+        <div>
+          <label>Seed</label>
+          <input type="number" name="seed" value="{{ defaults.seed }}" min="0" />
+        </div>
+
+        <div>
+          <label>Traffic samples (packets)</label>
+          <input type="number" name="packets" value="{{ defaults.packets }}" min="200" />
+        </div>
+      </div>
+
+      <hr class="sep" />
+
+      <div class="grid">
+        <div class="span2">
+          <label>Rules source</label>
+          <div class="radios">
+            <label class="radio"><input type="radio" name="rules_source" value="sample" checked /> Use sample rules</label>
+            <label class="radio"><input type="radio" name="rules_source" value="generate" /> Generate synthetic rules</label>
+            <label class="radio"><input type="radio" name="rules_source" value="upload" /> Upload JSON/CSV</label>
+          </div>
+        </div>
+
+        <div>
+          <label>Generate rules (N)</label>
+          <input type="number" name="generate_rules" value="{{ defaults.generate_rules }}" min="20" />
+          <div class="hint">Used only if you pick “Generate”.</div>
+        </div>
+
+        <div>
+          <label>Upload file</label>
+          <input type="file" name="rules_file" accept=".json,.csv" />
+          <div class="hint">Used only if you pick “Upload”.</div>
+        </div>
+      </div>
+
+      <hr class="sep" />
+
+      <div class="card-subtitle">GA Parameters</div>
+      <div class="grid">
+        <div>
+          <label>Population size</label>
+          <input type="number" name="pop" value="{{ defaults.pop }}" min="10" />
+        </div>
+        <div>
+          <label>Generations</label>
+          <input type="number" name="gens" value="{{ defaults.gens }}" min="5" />
+        </div>
+        <div>
+          <label>Crossover rate</label>
+          <input type="number" step="0.01" name="crossover" value="{{ defaults.crossover }}" min="0" max="1" />
+        </div>
+        <div>
+          <label>Swap mutation p</label>
+          <input type="number" step="0.01" name="p_swap" value="{{ defaults.p_swap }}" min="0" max="1" />
+        </div>
+        <div>
+          <label>Inversion mutation p</label>
+          <input type="number" step="0.01" name="p_inv" value="{{ defaults.p_inv }}" min="0" max="1" />
+        </div>
+        <div>
+          <label>Min coverage</label>
+          <input type="number" step="0.001" name="min_coverage" value="{{ defaults.min_coverage }}" min="0" max="1" />
+          <div class="hint">Hard-ish constraint: penalize if coverage drops below this.</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" type="submit">Run Optimization</button>
+        <div class="hint">Large rulesets can take longer. Start with Demo mode for presentation.</div>
+      </div>
+    </form>
+  </section>
+
+  <section id="recent" class="card">
+    <div class="card-title">Recent runs (from disk)</div>
+    {% if recent_runs|length == 0 %}
+      <p class="muted">No runs yet. Start one above 👆</p>
+    {% else %}
+      <div class="runs">
+        {% for r in recent_runs %}
+          <div class="run-item">
+            <div class="run-id"><a href="{{ url_for('run_view', run_id=r.run_id) }}">{{ r.run_id }}</a></div>
+            {% if r.has_metrics and r.improvements and r.improvements.speedup_x %}
+              <div class="muted">
+                speedup: <b>{{ "%.2f"|format(r.improvements.speedup_x) }}×</b>
+                • coverage: <b>{{ "%.4f"|format(r.metrics.ga_best.coverage) }}</b>
+              </div>
+            {% else %}
+              <div class="muted">(no metrics)</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}

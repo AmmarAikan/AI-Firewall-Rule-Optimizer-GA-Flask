@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="card">
+    <div class="card-title">Run: {{ run_id }}</div>
+
+    {% if job.state == 'running' or job.state == 'queued' %}
+      <div class="status running">⏳ Running... this page will update automatically.</div>
+      <div class="muted">Tip: use smaller presets for a faster demo.</div>
+      <div class="spinner" aria-hidden="true"></div>
+
+      <script>
+        async function poll() {
+          try {
+            const res = await fetch("{{ url_for('status', run_id=run_id) }}", {cache: "no-store"});
+            if (!res.ok) return;
+            const j = await res.json();
+            if (j.state === "done" || j.state === "error") {
+              window.location.reload();
+              return;
+            }
+          } catch (e) {}
+          setTimeout(poll, 1500);
+        }
+        poll();
+      </script>
+    {% elif job.state == 'error' %}
+      <div class="status error">❌ Error</div>
+      <pre class="code">{{ job.error }}</pre>
+      <div class="actions">
+        <a class="btn" href="{{ url_for('index') }}">Back</a>
+      </div>
+    {% else %}
+      <div class="status done">✅ Done</div>
+
+      {% if job.improvements and job.improvements.speedup_x %}
+        <div class="kpis">
+          <div class="kpi">
+            <div class="kpi-num">{{ "%.2f"|format(job.improvements.speedup_x) }}×</div>
+            <div class="kpi-label">Speedup (avg checks)</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-num">{{ "%.4f"|format(job.metrics.ga_best.coverage) }}</div>
+            <div class="kpi-label">GA coverage</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-num">{{ "%.3f"|format(job.metrics.ga_best.shadow_rate) }}</div>
+            <div class="kpi-label">GA shadow rate</div>
+          </div>
+        </div>
+      {% endif %}
+
+      <h3>Downloads</h3>
+      <div class="downloads">
+        {% if files.report_pdf %}
+          <a href="{{ url_for('run_file', run_id=run_id, filename='report.pdf') }}" target="_blank">Report PDF</a>
+        {% endif %}
+        {% if files.metrics %}
+          <a href="{{ url_for('run_file', run_id=run_id, filename='metrics.json') }}" target="_blank">metrics.json</a>
+        {% endif %}
+        {% if files.ordering %}
+          <a href="{{ url_for('run_file', run_id=run_id, filename='ordering_ga_best.json') }}" target="_blank">Best ordering (indices)</a>
+        {% endif %}
+        {% if files.rules_ga %}
+          <a href="{{ url_for('run_file', run_id=run_id, filename='rules_ga_ordered.json') }}" target="_blank">Optimized rules (full)</a>
+        {% endif %}
+      </div>
+
+      <h3>Metrics (Before vs After)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Variant</th>
+              <th>Coverage</th>
+              <th>Avg checks</th>
+              <th>Shadow rate</th>
+              <th>Inactive rules</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Original</b></td>
+              <td>{{ "%.4f"|format(job.metrics.original.coverage) }}</td>
+              <td>{{ "%.2f"|format(job.metrics.original.avg_checks) }}</td>
+              <td>{{ "%.3f"|format(job.metrics.original.shadow_rate) }}</td>
+              <td>{{ job.metrics.original.inactive_rules }}</td>
+            </tr>
+            <tr>
+              <td><b>Specificity baseline</b></td>
+              <td>{{ "%.4f"|format(job.metrics.specificity_baseline.coverage) }}</td>
+              <td>{{ "%.2f"|format(job.metrics.specificity_baseline.avg_checks) }}</td>
+              <td>{{ "%.3f"|format(job.metrics.specificity_baseline.shadow_rate) }}</td>
+              <td>{{ job.metrics.specificity_baseline.inactive_rules }}</td>
+            </tr>
+            <tr>
+              <td><b>GA best</b></td>
+              <td>{{ "%.4f"|format(job.metrics.ga_best.coverage) }}</td>
+              <td>{{ "%.2f"|format(job.metrics.ga_best.avg_checks) }}</td>
+              <td>{{ "%.3f"|format(job.metrics.ga_best.shadow_rate) }}</td>
+              <td>{{ job.metrics.ga_best.inactive_rules }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {% if figures|length > 0 %}
+        <h3>Figures</h3>
+        <div class="fig-grid">
+          {% for f in figures %}
+            <div class="fig">
+              <img src="{{ url_for('run_figure', run_id=run_id, name=f) }}" alt="{{ f }}" />
+              <div class="muted">{{ f }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="actions">
+        <a class="btn" href="{{ url_for('index') }}">Run another</a>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}

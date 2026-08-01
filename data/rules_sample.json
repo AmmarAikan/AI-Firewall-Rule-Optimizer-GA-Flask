@@ -1,0 +1,2102 @@
+[
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "444-446",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "443-452",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "3385-3398",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "46-56",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "121-125",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "119-128",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "2018-38253",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "3388-3395",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "28169-63978",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "19061-63607",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "9102-53975",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "14-23",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "28717-64783",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "115-127",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "2359-36905",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "72-87",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "33876-57683",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "8433-49665",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "444-452",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "192.168.0.0/16",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "16206-52817",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "28843-29922",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "8269-13794",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "33824-39030",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "8212-41915",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "115-127",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3388-3397",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "172.16.0.0/12",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3105-37100",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "24095-40785",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "34233-41068",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "36463-59686",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "36644-54377",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "192.168.0.0/16",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "79-87",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "9286-38630",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "445-454",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "493-44019",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "76-86",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "439-452",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "437-446",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "8326-17052",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "116-126",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "589-37273",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "10.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "440-454",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "43831-51493",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "172.16.0.0/12",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "439-449",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "15611-16991",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "29582-59188",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "14756-18043",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "21242-53288",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "55706-62415",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "21937-38871",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "119-130",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "33849-39798",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "172.16.0.0/12",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "9937-63042",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "54235-65304",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "79-82",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "172.16.0.0/12",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "10.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "1756-35837",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3388-3391",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "49-59",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "25221-36128",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "10.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "172.16.0.0/12",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "118-129",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "172.16.0.0/12",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "23244-25392",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "437-451",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "18795-39071",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "28455-53759",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "25975-41525",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "192.168.0.0/16",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "48412-55297",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "442-445",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "19084-39454",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "19060-48632",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "24443-56862",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "75-81",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "9601-34808",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "53718-60755",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "26580-53068",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "5559-43853",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3384-3397",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "968-5951",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "116-129",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "12709-13211",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "53603-63874",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3385-3394",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "172.16.0.0/12",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "10.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "28792-42798",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "439-448",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "50-56",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "441-450",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "32567-51780",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "10.0.0.0/8",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "45-53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "8107-25840",
+    "protocol": "ANY",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "6112-35733",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "15258-31144",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "16583-53372",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "444-449",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "8734-15837",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "192.168.0.0/16",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "47-56",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "1.1.1.0/24",
+    "port": "20-25",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "114-129",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "434-443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "17-24",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "14296-22076",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "11392-65442",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "436-444",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3381-3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "5388-20974",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "51851-52729",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "16066-40705",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "54387-61439",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "8.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "439-443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "ICMP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "17011-52440",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "8.0.0.0/8",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "442-452",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "43545-58605",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "1.1.1.0/24",
+    "port": "434-443",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "52.0.0.0/8",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "17807-52989",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "22",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "UDP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "10.0.0.0/8",
+    "port": "445",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "15159-20109",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "172.16.0.0/12",
+    "port": "123",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "17-30",
+    "protocol": "ANY",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "23313-50722",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "0.0.0.0/0",
+    "port": "53",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "0.0.0.0/0",
+    "port": "32701-61730",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "0.0.0.0/0",
+    "destination_ip": "8.0.0.0/8",
+    "port": "25825-62150",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "10.0.0.0/8",
+    "destination_ip": "10.0.0.0/8",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "1.1.1.0/24",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "52.0.0.0/8",
+    "port": "3389",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "1.1.1.0/24",
+    "port": "2663-19486",
+    "protocol": "TCP",
+    "action": "DENY"
+  },
+  {
+    "source_ip": "192.168.0.0/16",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "ANY",
+    "protocol": "TCP",
+    "action": "ALLOW"
+  },
+  {
+    "source_ip": "172.16.0.0/12",
+    "destination_ip": "0.0.0.0/0",
+    "port": "44600-58964",
+    "protocol": "UDP",
+    "action": "ALLOW"
+  }
+]
