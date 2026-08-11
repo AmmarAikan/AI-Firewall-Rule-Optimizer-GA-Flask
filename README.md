@@ -81,3 +81,11 @@ The web UI lets you:
 - Adjust GA parameters (population, generations, mutation rates...)
 - View before/after metrics and plots
 - Download the generated report/outputs for the run
+
+## Author
+
+**Ammar Aikan** — Cybersecurity Student & Security Researcher
+
+## Rights
+
+© 2026 Ammar Aikan. All Rights Reserved. See [COPYRIGHT.md](COPYRIGHT.md).
